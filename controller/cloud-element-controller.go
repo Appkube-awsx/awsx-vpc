@@ -43,3 +43,12 @@ func GetVpc(clientAuth *client.Auth) (*ec2.DescribeVpcsOutput, error) {
 	}
 	return response, nil
 }
+
+func GetVpcIds(clientAuth *client.Auth) ([]string, error) {
+	response, err := vpccmd.GetVpcIdList(*clientAuth)
+	if err != nil {
+		log.Println(err.Error())
+		return nil, err
+	}
+	return response, nil
+}

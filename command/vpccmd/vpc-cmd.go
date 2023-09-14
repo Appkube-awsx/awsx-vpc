@@ -22,7 +22,7 @@ func GetVpcList(auth client.Auth) (*ec2.DescribeVpcsOutput, error) {
 }
 
 func GetVpcIdList(auth client.Auth) ([]string, error) {
-	fmt.Println("Getting VPC Id list")
+	log.Println("Getting VPC Id list")
 	result, err := GetVpcList(auth)
 	if err != nil {
 		log.Println(err.Error())
@@ -30,7 +30,7 @@ func GetVpcIdList(auth client.Auth) ([]string, error) {
 	}
 	var vpclist []string
 	for _, vpc := range result.Vpcs {
-		fmt.Printf("ID: %s \n", *vpc.VpcId)
+		fmt.Println(*vpc.VpcId)
 		vpclist = append(vpclist, *vpc.VpcId)
 	}
 	return vpclist, nil

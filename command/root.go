@@ -23,7 +23,7 @@ func runCommand(cmd *cobra.Command, args []string) {
 		return
 	}
 	if authFlag {
-		if _, err := vpccmd.GetVpcList(*clientAuth); err != nil {
+		if _, err := vpccmd.GetVpcIdList(*clientAuth); err != nil {
 			cmd.Help()
 			return
 		}
