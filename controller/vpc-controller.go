@@ -1,9 +1,9 @@
 package controller
 
 import (
-	"github.com/Appkube-awsx/awsx-cloudelements/command/vpccmd"
 	"github.com/Appkube-awsx/awsx-common/authenticate"
 	"github.com/Appkube-awsx/awsx-common/client"
+	"github.com/Appkube-awsx/awsx-vpc/command/vpccmd"
 	"github.com/aws/aws-sdk-go/service/ec2"
 	"log"
 )
