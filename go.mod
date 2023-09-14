@@ -1,4 +1,4 @@
-module github.com/Appkube-awsx/awsx-cloudelements
+module github.com/Appkube-awsx/awsx-vpc
 
 go 1.19
 
