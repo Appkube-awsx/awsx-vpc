@@ -4,8 +4,8 @@ Copyright © 2023 Manoj Sharma manoj.sharma@synectiks.com
 package command
 
 import (
-	"github.com/Appkube-awsx/awsx-cloudelements/command/vpccmd"
 	"github.com/Appkube-awsx/awsx-common/authenticate"
+	"github.com/Appkube-awsx/awsx-vpc/command/vpccmd"
 	"github.com/spf13/cobra"
 )
 
